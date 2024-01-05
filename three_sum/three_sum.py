@@ -1,4 +1,16 @@
 def three_sum(nums):
+    """
+    The function uses a combination of sorting and a two-pointer approach. It iterates through
+    the sorted list, selecting the first element of the triplet. It then uses two pointers to
+    find the remaining two elements such that their sum equals zero. Duplicates are skipped
+    to ensure unique triplets.
+
+    Parameters:
+    - nums (List[int]): A list of integers.
+
+    Returns:
+    - List[List[int]]: A list containing lists representing unique triplets that sum to zero.
+    """
     result = []
     nums.sort()
 
@@ -29,6 +41,4 @@ def three_sum(nums):
     return result
 
 if __name__ == "__main__":
-    print(three_sum([-1,0,1,2,-1,-4]))
-    print(three_sum([0,1,1]))
-    print(three_sum([0,0,0]))
+    pass
